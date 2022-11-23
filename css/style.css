@@ -296,11 +296,20 @@ body{
     width: 30px;
     height: 30px;
     background-color: #FFFFFF;
+    cursor: pointer;
 }
 
-.modal-button:hover .modal-img{
+.modal-button:hover .modal-img, 
+.modal-button:focus .modal-img{
     fill: var(--accent-color);
 }
+
+.modal-button:focus {
+    outline: none;
+   
+}
+
+
 
 .modal-img{
     position: absolute;

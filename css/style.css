@@ -345,6 +345,12 @@ body{
     border-color: rgba(33, 33, 33, 0.2);
     margin-bottom: 28px;
     cursor: pointer;
+    
+}
+
+.modal-input:focus{
+
+    outline: none;
 }
 
 .modal-textarea{
@@ -359,8 +365,11 @@ body{
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-textarea:hover{
+.modal-textarea:hover, 
+.modal-textarea:focus{
+    
     border-color: var(--accent-color);
+    outline: none;
 }
 
 .modal-textarea::placeholder{
@@ -763,12 +772,13 @@ body{
 .link-icon:hover,
 .link-icon:focus {
     background-color: var(--accent-color);
-  
+    outline: none;  
 }
 
 .link-icon:hover .icon,
 .link-icon:focus .icon{
     fill: #FFFFFF;
+    
 }
 
 
@@ -826,14 +836,20 @@ body{
 
 .link-client:focus .client{
     fill: var(--accent-color);
+    
 }
 
+.link-client:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
 
 
 .item-client:hover .link-client{
     border-color: var(--accent-color);
     
     border-radius: 4px;
+    
 }
 
 
